@@ -22,7 +22,6 @@
             height: 600px;
         }
 
-        /* Настройки 3D плеера */
         model-viewer {
             width: 100%;
             height: 100%;
@@ -49,23 +48,24 @@
 </head>
 <body>
     <nav>
-        <div>BALENCIAGA // OBJECT_ID: STEROID_BT_3D (ONLINE_TEST_MODE)</div>
+        <div>BALENCIAGA // OBJECT_ID: STEROID_BT_3D (ARCHIVE_MODE)</div>
         <a href="balenciaga.html" class="back-btn">RETURN</a>
     </nav>
 
     <div class="main-content">
         <div class="image-section">
-      <model-viewer 
-    src="item_model.glb" 
-    alt="Steroid Boots 3D" 
-    auto-rotate 
-    camera-controls 
-    shadow-intensity="2"
-    exposure="1.2">
-</model-viewer>
-</model-viewer>
-          
-            <div class="hint-3d">[ ONLINE_RESOURCE_LOADED // INTERACT TO ROTATE ]</div>
+            <!-- Исправленный блок плеера -->
+            <model-viewer 
+                src="item_model.glb" 
+                alt="Steroid Boots 3D" 
+                auto-rotate 
+                camera-controls 
+                shadow-intensity="2"
+                exposure="1.2">
+                <div slot="poster" style="color: #444; font-size: 10px;">[ LOADING_3D_DATA... ]</div>
+            </model-viewer>
+            
+            <div class="hint-3d">[ SYSTEM_READY // INTERACT TO ROTATE ]</div>
         </div>
 
         <div class="info-section">
