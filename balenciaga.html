@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>yoyuk1n // BALENCIAGA DATABASE</title>
+    <style>
+        body { margin: 0; background: #050505; color: #fff; font-family: 'Courier New', monospace; }
+        nav { display: flex; justify-content: space-between; padding: 20px; border-bottom: 1px solid #1a1a1a; font-size: 12px; letter-spacing: 2px; }
+        .back-link { color: #fff; text-decoration: none; border: 1px solid #333; padding: 5px 15px; transition: 0.3s; }
+        .back-link:hover { background: #fff; color: #000; }
+        .brand-header { width: 100%; padding: 80px 20px; text-align: center; border-bottom: 1px solid #1a1a1a; box-sizing: border-box; }
+        .brand-header h1 { font-weight: 200; letter-spacing: 15px; margin: 0; font-size: 40px; text-transform: uppercase; }
+        .brand-description { max-width: 700px; margin: 25px auto 0; font-size: 11px; line-height: 1.8; color: #555; text-transform: uppercase; letter-spacing: 1px; }
+        .container { padding: 40px; }
+        .archive-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+        .item-link { text-decoration: none; color: inherit; display: block; }
+        .card { border: 1px solid #1a1a1a; padding: 10px; background: #080808; transition: 0.4s ease-in-out; position: relative; }
+        .card:hover { border-color: #fff; transform: scale(1.02); }
+        .card img { width: 100%; height: 400px; object-fit: cover; filter: grayscale(1); transition: 0.5s; }
+        .card:hover img { filter: grayscale(0); }
+        .badge-3d { position: absolute; top: 15px; right: 15px; background: #fff; color: #000; font-size: 8px; padding: 2px 6px; font-weight: bold; z-index: 10; }
+        .item-info { display: flex; justify-content: space-between; font-size: 9px; margin-top: 10px; color: #444; text-transform: uppercase; }
+        .card:hover .item-info { color: #fff; }
+        @media (max-width: 1400px) { .archive-grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 1100px) { .archive-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 800px) { .archive-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .archive-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<nav>
+    <div>yoyuk1n // BALENCIAGA DATABASE</div>
+    <a href="index.html" class="back-link">RETURN_TO_SYSTEM</a>
+</nav>
+
+<div class="brand-header">
+    <h1>BALENCIAGA</h1>
+    <p class="brand-description">
+        Fashion as a social experiment. From corporate logos to post-apocalyptic silhouettes, Balenciaga under Demna questions the nature of luxury in the age of mass consumption.
+    </p>
+</div>
+
+<div class="container">
+    <div class="archive-grid">
+        <a href="blncg_item_1.html" class="item-link">
+            <div class="card">
+                <div class="badge-3d">3D SCAN</div>
+                <img src="https://i.pinimg.com/1200x/a1/46/10/a14610961b5552123f4f14f90be44ed2.jpg">
+                <div class="item-info"><span>steroid boots</span><span></span></div>
+            </div>
+        </a>
+        <a href="blncg_item_2.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/1200x/cf/23/c8/cf23c8e9734849eef0a069796a72bb0d.jpg"><div class="item-info"><span> spray-paint baseball cap</span><span>2021</span></div></div>
+        </a>
+        <a href="blncg_item_3.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/1200x/87/63/00/876300a66f9190696b4de207d883fa4b.jpg"><div class="item-info"><span>Neo Cagole City Bag</span><span>FW22</span></div></div>
+        </a>
+        <a href="blncg_item_4.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/1200x/f3/e6/85/f3e685aa85617ef665776b655eada4b7.jpg"><div class="item-info"><span>Miami Exclusive Soccer Hoodie</span><span>SS23</span></div></div>
+        </a>
+        <a href="blncg_item_5.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/1200x/d7/77/2a/d7772add7a81389b898dfec22c49f919.jpg"><div class="item-info"><span>polo zip up</span><span>FW23</span></div></div>
+        </a>
+        <a href="blncg_item_6.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/736x/64/1d/8d/641d8d7fea4ff2343dc109d05decb57c.jpg"><div class="item-info"><span>Alaska Nylon Snow Boots</span><span>SKI2023</span></div></div>
+        </a>
+        <a href="blncg_item_7.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/1200x/7f/27/69/7f2769e99006bbbf3f9619c8a5d9668e.jpg"><div class="item-info"><span>Furry Shearling Slide Sandals Slippers </span><span>FW21</span></div></div>
+        </a>
+        <a href="blncg_item_8.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/1200x/72/cd/8f/72cd8f4f44b0f823908cb70dbd8b670e.jpg"><div class="item-info"><span>The Lost Tape Flared Jeans</span><span>FW22</span></div></div>
+        </a>
+        <a href="blncg_item_9.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/1200x/dc/65/71/dc6571fa2556f9ca7fb38b6d2dc1dc2a.jpg"><div class="item-info"><span>9 Am Clutch in White</span><span>FW22</span></div></div>
+        </a>
+        <a href="blncg_item_10.html" class="item-link">
+            <div class="card"><img src="https://i.pinimg.com/736x/1b/96/c0/1b96c04da7c57e4efaaebd51788f17ff.jpg"><div class="item-info"><span>Authentic Sports Apparel</span><span>2023</span></div></div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
+</html>

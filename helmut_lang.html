@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>yoyuk1n // ARCHIVE_EXPANDED</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: #050505; 
+            color: #fff; 
+            font-family: 'Courier New', monospace; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #1a1a1a;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .back-link {
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #333;
+            padding: 5px 15px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover { background: #fff; color: #000; }
+
+        /* Шапка бренда */
+        .brand-header {
+            width: 100%;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #1a1a1a;
+            box-sizing: border-box;
+        }
+
+        .brand-header h1 {
+            font-weight: 200;
+            letter-spacing: 15px;
+            margin: 0;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .brand-description {
+            max-width: 700px;
+            margin: 25px auto 0;
+            font-size: 11px;
+            line-height: 1.8;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 20px;
+        }
+
+        /* Убираем стандартный стиль ссылок для карточек */
+        .item-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card {
+            border: 1px solid #1a1a1a;
+            padding: 10px;
+            background: #080808;
+            transition: 0.4s ease-in-out;
+            height: 100%;
+        }
+
+        .card:hover { border-color: #fff; transform: scale(1.02); }
+
+        .card img {
+            width: 100%;
+            height: 400px; 
+            object-fit: cover;
+            filter: grayscale(1);
+            transition: 0.5s;
+        }
+
+        .card:hover img { filter: grayscale(0); }
+
+        .item-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9px;
+            margin-top: 10px;
+            color: #444;
+            text-transform: uppercase;
+        }
+
+        .card:hover .item-info { color: #fff; }
+
+        @media (max-width: 1400px) { .archive-grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 1100px) { .archive-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 800px) { .archive-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .archive-grid { grid-template-columns: 1fr; } }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>yoyuk1n // HL DATABASE</div>
+    <a href="index.html" class="back-link">RETURN_TO_SYSTEM</a>
+</nav>
+
+<div class="brand-header">
+    <h1>HELMUT LANG</h1>
+    <p class="brand-description">
+        Helmut Lang is often described as the architect of late-90s minimalism...
+    </p>
+</div>
+
+<div class="container">
+    <div class="archive-grid">
+        
+        <a href="hl_item_1.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/a9/89/4e/a9894ef3df6f45535f791fd0ad1a2f5d.jpg">
+                <div class="item-info"><span>Laced Bondage M69 Flak Down Jacket</span><span>AW98</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_2.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/78/3b/87/783b87996d01a9379abe15f6b51a5e4a.jpg">
+                <div class="item-info"><span>Moleskin Astro Biker Jacket</span><span>AW99</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_3.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/8c/cc/d9/8cccd9b0085ab6f2318b3c6e65c92a0f.jpg">
+                <div class="item-info"><span>Astro BIker beschichteter Denim Jeans</span><span>AW99</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_4.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/e0/b5/07/e0b5070c91b36822259792935364384d.jpg">
+                <div class="item-info"><span>Astro Biker Jacket</span><span>AW99</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_5.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/0a/ba/fc/0abafc9de5bea4590fa44b4d1fc88d87.jpg">
+                <div class="item-info"><span>Backstage Pass Staff Shirt</span><span>NY??</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_6.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/1f/d4/33/1fd4338f504b915cc7700315c8831218.jpg">
+                <div class="item-info"><span>Leather Cigarette case</span><span>AW2004</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_7.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/56/ff/91/56ff912d5803b5f53d1dfc25d766e89f.jpg">
+                <div class="item-info"><span>Line painted denim jeans</span><span>AW97</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_8.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/2e/08/16/2e0816f5a886aa8d87e5bfe49dc6d097.jpg">
+                <div class="item-info"><span>COWBOY t-shirt</span><span>AW23</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_9.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/80/a6/08/80a608ff799d1383d3d16ef475519f22.jpg">
+                <div class="item-info"><span>TWO STEPS FORWARD</span><span>??</span></div>
+            </div>
+        </a>
+
+        <a href="hl_item_10.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/fc/10/ad/fc10ad983837c4cb35b0bce52748c1bd.jpg">
+                <div class="item-info"><span>Black Lamb Leather Blazer Jacket</span><span>1999</span></div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>

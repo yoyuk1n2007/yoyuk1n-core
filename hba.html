@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>yoyuk1n // HBA DATABASE</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: #050505; 
+            color: #fff; 
+            font-family: 'Courier New', monospace; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #1a1a1a;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .back-link {
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #333;
+            padding: 5px 15px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover { background: #fff; color: #000; }
+
+        .brand-header {
+            width: 100%;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #1a1a1a;
+            box-sizing: border-box;
+        }
+
+        .brand-header h1 {
+            font-weight: 200;
+            letter-spacing: 15px;
+            margin: 0;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .brand-description {
+            max-width: 700px;
+            margin: 25px auto 0;
+            font-size: 11px;
+            line-height: 1.8;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .container { padding: 40px; }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+            gap: 20px;
+        }
+
+        .item-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card {
+            border: 1px solid #1a1a1a;
+            padding: 10px;
+            background: #080808;
+            transition: 0.4s ease-in-out;
+        }
+
+        .card:hover { border-color: #fff; transform: scale(1.02); }
+
+        .card img {
+            width: 100%;
+            height: 400px; 
+            object-fit: cover;
+            filter: grayscale(1);
+            transition: 0.5s;
+        }
+
+        .card:hover img { filter: grayscale(0); }
+
+        .item-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9px;
+            margin-top: 10px;
+            color: #444;
+            text-transform: uppercase;
+        }
+
+        .card:hover .item-info { color: #fff; }
+
+        @media (max-width: 1400px) { .archive-grid { grid-template-columns: repeat(4, 1fr); } }
+        @media (max-width: 1100px) { .archive-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 800px) { .archive-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .archive-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div>yoyuk1n // HBA DATABASE</div>
+    <a href="index.html" class="back-link">RETURN_TO_SYSTEM</a>
+</nav>
+
+<div class="brand-header">
+    <h1>HOOD BY AIR</h1>
+    <p class="brand-description">
+        Hood By Air redefined luxury by merging high-fashion deconstruction with NYC ball culture and industrial aesthetics. Founded by Shayne Oliver, the brand radicalized gender, power, and brand identity through aggressive graphics and modular design.
+    </p>
+</div>
+
+<div class="container">
+    <div class="archive-grid">
+        
+        <a href="hba_item_1.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/25/11/68/251168b87310537ef88dfb9b79fd2cb6.jpg">
+                <div class="item-info"><span>explosion button up shirt</span><span>2016</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_2.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/95/9c/b1/959cb185e58556f9950e6dfc2615f5ee.jpg">
+                <div class="item-info"><span>69 long sleeve</span><span>FW14</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_3.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/7c/cf/02/7ccf02b0a591b38a0e6205be1e021764.jpg">
+                <div class="item-info"><span>Jason fulleip
+</span><span>AW15</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_4.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/f5/d5/6f/f5d56f53c64ac4c477698bdc0c4df631.jpg">
+                <div class="item-info"><span>Aphex Twin longsleeve</span><span>SS17</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_5.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/4e/21/9d/4e219df90349a6bbec7bd4849d9c4f6f.jpg">
+                <div class="item-info"><span>Leather Helmet</span><span>2013</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_6.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/26/ea/8c/26ea8c252bc4f8edd4badc9e47100a78.jpg">
+                <div class="item-info"><span>"face" shirt</span><span>FW15</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_7.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/35/9e/4a/359e4a29d942d028e71b5c1be1a0135a.jpg">
+                <div class="item-info"><span>Never Trust a Vogue Girl shirt</span><span>SS16</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_8.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/62/ef/55/62ef555ac93ac92d27852ec45a116b2f.jpg">
+                <div class="item-info"><span>Hockey Jersey</span><span>SS14</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_9.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/22/cb/67/22cb6759a743fbcd17d2e7d65fd56057.jpg">
+                <div class="item-info"><span>longsleeve t shirt</span><span>FW16</span></div>
+            </div>
+        </a>
+
+        <a href="hba_item_10.html" class="item-link">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/a5/29/a8/a529a8e8f46624729315e3cc3ee4caa0.jpg">
+                <div class="item-info"><span>poodle longsleeve</span><span>SS16</span></div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
