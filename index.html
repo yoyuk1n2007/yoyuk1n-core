@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>yoyuk1n // NICHE SYSTEM</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
+    <style>
+        body { 
+            margin: 0; 
+            background: #050505; 
+            color: #fff; 
+            font-family: 'Courier New', monospace; 
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 1px solid #1a1a1a;
+            font-size: 12px;
+            letter-spacing: 2px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white; 
+            margin-left: 20px; 
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover { opacity: 0.5; }
+
+        /* Стили для аудио-кнопки */
+        #audio-control {
+            cursor: pointer;
+            border: 1px solid #333;
+            padding: 5px 10px;
+            font-size: 10px;
+            transition: 0.3s;
+        }
+        #audio-control:hover { background: #fff; color: #000; }
+
+        #panorama {
+            width: 100%;
+            height: 50vh;
+            background: #000; 
+        }
+
+        .container {
+            padding: 60px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-weight: 200; 
+            letter-spacing: 5px; 
+            text-align: center; 
+            margin-bottom: 50px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .archive-grid a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card {
+            border: 1px solid #1a1a1a;
+            padding: 10px;
+            background: #080808;
+            transition: 0.4s ease-in-out;
+        }
+
+        .card:hover {
+            border-color: #fff;
+            transform: scale(1.02);
+        }
+
+        .card img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            filter: grayscale(1);
+            transition: 0.5s;
+        }
+
+        .card:hover img {
+            filter: grayscale(0);
+        }
+
+        .brand-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        .card:hover .brand-info {
+            color: #fff;
+        }
+
+        @media (max-width: 1200px) { .archive-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 800px) { .archive-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .archive-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<audio id="bg-music" loop>
+    <source src="YOUR_MUSIC_FILE.mp3" type="audio/mpeg">
+</audio>
+
+<nav>
+    <div>yoyuk1n // CORE</div>
+    <div class="nav-links">
+        <span id="audio-control" onclick="toggleMusic()">AUDIO: OFF</span>
+        <a href="index.html">CATALOG</a>
+        
+    </div>
+</nav>
+
+<div id="panorama"></div>
+
+<div class="container">
+    <h2>[ ARCHIVE_SELECTION_V1 ]</h2>
+    <div class="archive-grid">
+        
+        <a href="helmut_lang.html">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/19/07/1d/19071dc5919f4d07aaad560e8203ad4a.jpg">
+                <div class="brand-info"><span>HELMUT LANG</span></div>
+            </div>
+        </a>
+
+        <a href="margiela.html">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/5e/9c/84/5e9c84dafdeff22b44c7328b1c234fef.jpg">
+                <div class="brand-info"><span>MAISON MARGIELA</span></div>
+            </div>
+        </a>
+
+        <a href="hba.html">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/06/b7/1b/06b71b28df1228abd6e148ffcfbed704.jpg">
+                <div class="brand-info"><span>HOOD BY AIR</span></div>
+            </div>
+        </a>
+
+        <a href="balenciaga.html">
+            <div class="card">
+                <img src="https://i.pinimg.com/1200x/61/1d/1a/611d1a1c091323dcdb88da46a039128d.jpg">
+                <div class="brand-info"><span>BALENCIAGA</span></div>
+            </div>
+        </a>
+
+        <a href="y3.html">
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/b5/38/92/b53892457e6827dcb4d945f9e8d208b8.jpg">
+                <div class="brand-info"><span>Y-3 / YAMAMOTO</span></div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<script>
+    // Инициализация панорамы
+    try {
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "https://pannellum.org/images/alma.jpg",
+            "autoLoad": true,
+            "autoRotate": -1.5,
+            "showControls": false,
+            "backgroundColor": [0, 0, 0]
+        });
+    } catch (e) {
+        document.getElementById('panorama').innerHTML = "";
+    }
+
+    // Функция управления музыкой
+    const music = document.getElementById('bg-music');
+    const control = document.getElementById('audio-control');
+
+    function toggleMusic() {
+        if (music.paused) {
+            music.play();
+            control.innerText = "AUDIO: ON";
+            control.style.background = "#fff";
+            control.style.color = "#000";
+        } else {
+            music.pause();
+            control.innerText = "AUDIO: OFF";
+            control.style.background = "transparent";
+            control.style.color = "#fff";
+        }
+    }
+</script>
+
+</body>
+</html>
